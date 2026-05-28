@@ -1,7 +1,17 @@
 import{createRouter , createWebHistory} from 'vue-router'
 import HomeView from '../views/Home.vue'
 import ContactView from '../views/Contact.vue'
-import LoginView from '../views/Login.vue'
+import AboutView from '../views/about.vue'
+import PhotosView from '../views/Photos.vue'
+import VideosView from '../views/Videos.vue'
+import DestinationsView from '../views/Destinations.vue'
+import ServicesView from '../views/Services.vue'
+import EastView from '../views/east.vue'
+import NorthView from '../views/north.vue'
+import SouthView from '../views/south.vue'
+import WestView from '../views/west.vue'
+import KigaliView from '../views/kigali.vue'
+
 
 const routes = [
     {
@@ -9,15 +19,61 @@ const routes = [
         name:"home", 
         component: HomeView,
     },
+       {
+        path:"/about",
+        name:"about", 
+        component:AboutView,
+    },
     {
         path:"/contact",
         name:"contact", 
         component: ContactView,
     },
+
     {
-        path:"/login",
-        name:"login", 
-        component: LoginView,
+        path:"/photos",
+        name:"photos", 
+        component: PhotosView,
+    },
+    {
+        path:"/videos",
+        name:"videos", 
+        component: VideosView,
+    },
+    {
+        path:"/destinations",
+        name:"destinations", 
+        component: DestinationsView,
+    },
+    {
+        path:"/services",
+        name:"services", 
+        component: ServicesView,
+    },
+    {
+        path:"/east",
+        name:"east", 
+        component: EastView,
+    },
+    {
+        path:"/north",
+        name:"north", 
+        component: NorthView,
+    },
+    {
+        path:"/south",
+        name:"south", 
+        component: SouthView,
+    },
+    {
+        path:"/west",
+        name:"west", 
+        component: WestView,
+    },
+    {
+        path:"/kigali",
+        name:"kigali", 
+        component: KigaliView,
     },
 ];
  const router = createRouter({
