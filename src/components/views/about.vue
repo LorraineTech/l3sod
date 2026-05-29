@@ -1,9 +1,9 @@
 <template>
-  <section class="bg-gray-50 text-slate-900">
+  <section class="relative min-h-[85vh] bg-cover bg-center" style="background-image:url(/src/assets/images/city.jpg)">
     <div class="mx-auto max-w-6xl px-6 py-20 text-center">
       <p class="text-sm uppercase tracking-[0.35em] text-emerald-600">About Rwanda Tours</p>
       <h1 class="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl">A travel experience designed for discovery and ease</h1>
-      <p class="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate-600">We help visitors connect with Rwanda’s natural beauty, local communities, and cultural stories through curated routes, friendly guidance, and thoughtful experiences.</p>
+      <p class="mx-auto mt-6 max-w-3xl text-base leading-8 text-black-600">We help visitors connect with Rwanda’s natural beauty, local communities, and cultural stories through curated routes, friendly guidance, and thoughtful experiences.</p>
       <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
         <router-link to="/contact" class="inline-flex rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold text-white transition hover:bg-emerald-500">Contact Us</router-link>
         <router-link to="/services" class="inline-flex rounded-full border border-emerald-500 bg-white px-8 py-3 text-sm font-semibold text-emerald-700 transition hover:bg-emerald-50">See Services</router-link>
