@@ -1,12 +1,32 @@
 <template>
-  <section class="bg-white text-gray-900 min-h-screen py-12 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h1 class="text-4xl font-bold text-center mb-4 text-green-800">Gallery - Photos</h1>
-      <p class="text-center text-lg text-gray-600 mb-8">
-        Explore beautiful photography from Rwanda. Stunning landscapes, wildlife, and cultural moments captured by our team.
-      </p>
-      <div class="bg-gray-100 border-2 border-gray-300 rounded-lg p-12 text-center">
-        <p class="text-gray-500 text-lg">Photo gallery section - Coming soon with amazing Rwanda photos!</p>
+  <section class="bg-slate-50 min-h-screen text-slate-900 py-12 px-4">
+    <div class="max-w-6xl mx-auto">
+      <header class="text-center mb-12">
+        <h1 class="text-4xl font-bold mb-4 text-slate-900">Rwanda Photo Gallery</h1>
+        <p class="text-slate-600 max-w-2xl mx-auto">A visual journey through Rwanda's landscapes, cities, and cultural highlights.</p>
+      </header>
+      <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <article class="rounded-[2rem] overflow-hidden shadow-lg bg-white">
+          <img src="../../assets/images/kigali.jpg" alt="Kigali city" class="h-64 w-full object-cover" />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">Kigali City</h2>
+            <p class="text-slate-600">Modern cityscapes, markets, and vibrant street life in the heart of Rwanda.</p>
+          </div>
+        </article>
+        <article class="rounded-[2rem] overflow-hidden shadow-lg bg-white">
+          <img src="../../assets/images/mount.jpg" alt="Volcanoes mountain" class="h-64 w-full object-cover" />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">Mountain Landscapes</h2>
+            <p class="text-slate-600">Rolling hills, misty volcanoes, and dramatic views across the northern highlands.</p>
+          </div>
+        </article>
+        <article class="rounded-[2rem] overflow-hidden shadow-lg bg-white">
+          <img src="../../assets/images/city.jpg" alt="Lake Kivu view" class="h-64 w-full object-cover" />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold mb-2">Lakeside Views</h2>
+            <p class="text-slate-600">Peaceful lake shores and colorful sunsets from Rwanda's western province.</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>

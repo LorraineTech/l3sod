@@ -3,7 +3,7 @@
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"> 
             <div>
                 <h3 class="text-xl font-bold text-yellow-400 mb-2">Tembera U Rwanda</h3>
-                <p class="text-sm">Doscover the beauty of the land of a thousand hills</p>
+                <p class="text-sm">Discover the beauty of the land of a thousand hills</p>
             </div>
 
             <div>
@@ -45,7 +45,7 @@
                     <ul class="space-y-2 text-green-300">
                     <li> Ahantu nyaburanga</li>
                     <li>+250795815794</li>
-                    <li> kabuge kigali Rwanda</li>
+                    <li> Kagugu-Kigali Rwanda</li>
                     </ul>
                 </div>
                </div>

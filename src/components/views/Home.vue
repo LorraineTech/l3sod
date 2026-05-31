@@ -1,12 +1,12 @@
 <script setup></script>
 
 <template>
-  <section class="relative min-h-[85vh] bg-cover bg-center" style="background-image:url(/src/assets/images/rwa.jpg)">
-    <div class="absolute inset-0 "></div>
+  <section class="relative min-h-[85vh] bg-cover bg-center" style="background-image:url(/src/assets/images/mm.jpg)">
+    <div class="absolute inset-0 bg-black/70"></div>
     <div class="relative mx-auto flex min-h-[85vh] max-w-6xl flex-col items-center justify-center px-6 text-center text-slate-900">
       <span class="inline-flex rounded-full border border-emerald-300 bg-emerald-50 px-4 py-2 text-xs uppercase tracking-[0.35em] text-emerald-700">Explore Rwanda</span>
       <h1 class="mt-6 text-4xl font-extrabold leading-tight sm:text-6xl text-white">Feel the beauty of Rwanda beyond the ordinary</h1>
-      <p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-700 sm:text-base">From misty hills and wildlife-rich parks to vibrant city life and welcoming culture, Rwanda is a destination for adventure, relaxation, and inspiring stories.</p>
+      <p class="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white sm:text-base">From misty hills and wildlife-rich parks to vibrant city life and welcoming culture, Rwanda is a destination for adventure, relaxation, and inspiring stories.</p>
       <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
         <router-link to="/destinations" class="inline-flex items-center justify-center rounded-full bg-emerald-600 px-8 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-white transition hover:bg-emerald-500">View Destinations</router-link>
         <router-link to="/about" class="inline-flex items-center justify-center rounded-full border border-emerald-500 bg-white px-8 py-3 text-sm font-semibold uppercase tracking-[0.12em] text-emerald-700 transition hover:bg-emerald-50">About Us</router-link>

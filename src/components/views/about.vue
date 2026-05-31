@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-[85vh] bg-cover bg-center" style="background-image:url(/src/assets/images/city.jpg)">
+  <section class="relative min-h-[85vh] bg-cover bg-center" style="background-image:url(/src/assets/MMM.jpg)">
     <div class="mx-auto max-w-6xl px-6 py-20 text-center">
       <p class="text-sm uppercase tracking-[0.35em] text-emerald-600">About Rwanda Tours</p>
       <h1 class="mt-4 text-4xl font-extrabold tracking-tight sm:text-5xl">A travel experience designed for discovery and ease</h1>
