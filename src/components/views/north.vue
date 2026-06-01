@@ -1,21 +1,31 @@
+<script setup>
+import { useTranslation } from '../../composables/useTranslation'
+const { t } = useTranslation()
+
+const heroImage = new URL('../../assets/images/gorilla.jpg', import.meta.url).href
+const cardImages = {
+  gorilla: new URL('../../assets/images/gorilla.jpg', import.meta.url).href,
+  volcano: new URL('../../assets/images/volcanoes.jpg', import.meta.url).href,
+  culture: new URL('../../assets/images/north.jpg', import.meta.url).href,
+}
+</script>
+
 <template>
   <section class="min-h-screen bg-gradient-to-br from-emerald-50 to-green-100 text-slate-900 py-12 px-4">
     <div class="max-w-6xl mx-auto">
       <div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
         <div>
-          <span class="inline-flex rounded-full bg-emerald-200 px-3 py-1 text-sm font-semibold text-emerald-800 mb-4">Northern Province</span>
-          <h1 class="text-4xl sm:text-5xl font-bold mb-6">Explore Rwanda’s highland region</h1>
-          <p class="text-lg text-slate-600 leading-8 mb-8">
-            Northern Province is home to the misty volcanoes and endangered mountain gorillas. It’s perfect for adventure seekers and nature lovers.
-          </p>
+          <span class="inline-flex rounded-full bg-emerald-200 px-3 py-1 text-sm font-semibold text-emerald-800 mb-4">{{ t('northBadge') }}</span>
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6">{{ t('northTitle') }}</h1>
+          <p class="text-lg text-slate-600 leading-8 mb-8">{{ t('northText') }}</p>
           <div class="grid gap-4 sm:grid-cols-2">
             <div class="rounded-3xl border border-emerald-200 bg-white p-6 shadow-sm">
-              <h2 class="text-xl font-semibold text-emerald-800 mb-2">Volcanoes Park</h2>
-              <p class="text-slate-600">Trek through lush forest and see Rwanda’s famous volcanoes up close.</p>
+              <h2 class="text-xl font-semibold text-emerald-800 mb-2">{{ t('northCard1Title') }}</h2>
+              <p class="text-slate-600">{{ t('northCard1Text') }}</p>
             </div>
             <div class="rounded-3xl border border-emerald-200 bg-white p-6 shadow-sm">
-              <h2 class="text-xl font-semibold text-emerald-800 mb-2">Gorilla Trekking</h2>
-              <p class="text-slate-600">Experience unforgettable wildlife encounters in one of the world’s most special ecosystems.</p>
+              <h2 class="text-xl font-semibold text-emerald-800 mb-2">{{ t('northCard2Title') }}</h2>
+              <p class="text-slate-600">{{ t('northCard2Text') }}</p>
             </div>
           </div>
         </div>
@@ -28,34 +38,25 @@
         <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-emerald-100 transition hover:-translate-y-1 hover:shadow-xl">
           <img :src="cardImages.gorilla" alt="Gorilla trekking" class="h-48 w-full object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-3 text-emerald-800">Mountain Gorillas</h3>
-            <p class="text-slate-600">Join guided treks and observe gorilla families in their natural habitat.</p>
+            <h3 class="text-2xl font-semibold mb-3 text-emerald-800">{{ t('northCard1Title') }}</h3>
+            <p class="text-slate-600">{{ t('northCard1Text') }}</p>
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-emerald-100 transition hover:-translate-y-1 hover:shadow-xl">
           <img :src="cardImages.volcano" alt="Volcano landscape" class="h-48 w-full object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-3 text-emerald-800">Volcano Views</h3>
-            <p class="text-slate-600">Take in dramatic scenery from Rwanda’s famous mountain peaks.</p>
+            <h3 class="text-2xl font-semibold mb-3 text-emerald-800">{{ t('northCard2Title') }}</h3>
+            <p class="text-slate-600">{{ t('northCard2Text') }}</p>
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-emerald-100 transition hover:-translate-y-1 hover:shadow-xl">
           <img :src="cardImages.culture" alt="Highland village" class="h-48 w-full object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-3 text-emerald-800">Local Villages</h3>
-            <p class="text-slate-600">Explore hillside communities and learn about everyday life in the north.</p>
+            <h3 class="text-2xl font-semibold mb-3 text-emerald-800">{{ t('northCard3Title') }}</h3>
+            <p class="text-slate-600">{{ t('northCard3Text') }}</p>
           </div>
         </article>
       </div>
     </div>
   </section>
 </template>
-
-<script setup>
-const heroImage = new URL('../../assets/images/gorilla.jpg', import.meta.url).href
-const cardImages = {
-  gorilla: new URL('../../assets/images/gorilla.jpg', import.meta.url).href,
-  volcano: new URL('../../assets/images/volcanoes.jpg', import.meta.url).href,
-  culture: new URL('../../assets/images/culture.jpg', import.meta.url).href,
-}
-</script>

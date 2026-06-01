@@ -3,19 +3,17 @@
     <div class="max-w-6xl mx-auto">
       <div class="grid gap-10 lg:grid-cols-[1.2fr_0.8fr] items-center">
         <div>
-          <span class="inline-flex rounded-full bg-purple-200 px-3 py-1 text-sm font-semibold text-purple-800 mb-4">Western Province</span>
-          <h1 class="text-4xl sm:text-5xl font-bold mb-6">Discover crater lakes and lakefront beauty</h1>
-          <p class="text-lg text-slate-600 leading-8 mb-8">
-            Western Province is known for its shimmering lakes, rocky ridges, and lakeside towns that invite quiet exploration.
-          </p>
+          <span class="inline-flex rounded-full bg-purple-200 px-3 py-1 text-sm font-semibold text-purple-800 mb-4">{{ t('westBadge') }}</span>
+          <h1 class="text-4xl sm:text-5xl font-bold mb-6">{{ t('westTitle') }}</h1>
+          <p class="text-lg text-slate-600 leading-8 mb-8">{{ t('westText') }}</p>
           <div class="grid gap-4 sm:grid-cols-2">
             <div class="rounded-3xl border border-purple-200 bg-white p-6 shadow-sm">
-              <h2 class="text-xl font-semibold text-purple-800 mb-2">Lake Kivu Shore</h2>
-              <p class="text-slate-600">Relax beside peaceful lakes and discover picturesque waterfront towns.</p>
+              <h2 class="text-xl font-semibold text-purple-800 mb-2">{{ t('westCard1Title') }}</h2>
+              <p class="text-slate-600">{{ t('westCard1Text') }}</p>
             </div>
             <div class="rounded-3xl border border-purple-200 bg-white p-6 shadow-sm">
-              <h2 class="text-xl font-semibold text-purple-800 mb-2">Hiking Trails</h2>
-              <p class="text-slate-600">Explore crater rims and forested hills for dramatic western panoramas.</p>
+              <h2 class="text-xl font-semibold text-purple-800 mb-2">{{ t('westCard2Title') }}</h2>
+              <p class="text-slate-600">{{ t('westCard2Text') }}</p>
             </div>
           </div>
         </div>
@@ -28,22 +26,22 @@
         <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-purple-100 transition hover:-translate-y-1 hover:shadow-xl">
           <img :src="cardImages.crater" alt="Crater lakes" class="h-48 w-full object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-3 text-purple-800">Crater Lakes</h3>
-            <p class="text-slate-600">Visit stunning crater lakes set against lush green hills.</p>
+            <h3 class="text-2xl font-semibold mb-3 text-purple-800">{{ t('westCard1Title') }}</h3>
+            <p class="text-slate-600">{{ t('westCard1Text') }}</p>
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-purple-100 transition hover:-translate-y-1 hover:shadow-xl">
           <img :src="cardImages.town" alt="Lakeside town" class="h-48 w-full object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-3 text-purple-800">Lakeside Towns</h3>
-            <p class="text-slate-600">Discover charming lakeside communities and relaxing waterfront activities.</p>
+            <h3 class="text-2xl font-semibold mb-3 text-purple-800">{{ t('westCard2Title') }}</h3>
+            <p class="text-slate-600">{{ t('westCard2Text') }}</p>
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-purple-100 transition hover:-translate-y-1 hover:shadow-xl">
           <img :src="cardImages.forest" alt="Forest path" class="h-48 w-full object-cover" />
           <div class="p-6">
-            <h3 class="text-2xl font-semibold mb-3 text-purple-800">Nature Walks</h3>
-            <p class="text-slate-600">Hike through quiet nature paths and enjoy the western region’s calm scenery.</p>
+            <h3 class="text-2xl font-semibold mb-3 text-purple-800">{{ t('westCard3Title') }}</h3>
+            <p class="text-slate-600">{{ t('westCard3Text') }}</p>
           </div>
         </article>
       </div>
@@ -52,10 +50,13 @@
 </template>
 
 <script setup>
-const heroImage = new URL('../../assets/images/yy.jpg', import.meta.url).href
+import { useTranslation } from '../../composables/useTranslation'
+const { t } = useTranslation()
+
+const heroImage = new URL('../../assets/images/culture.jpg', import.meta.url).href
 const cardImages = {
-  crater: new URL('../../assets/images/volcanoes.jpg', import.meta.url).href,
-  town: new URL('../../assets/images/huye.jpg', import.meta.url).href,
-  forest: new URL('../../assets/images/zebra.jpg', import.meta.url).href,
+  crater: new URL('../../assets/images/kivu.jpg', import.meta.url).href,
+  town: new URL('../../assets/images/crater.jpg', import.meta.url).href,
+  forest: new URL('../../assets/images/west.jpg', import.meta.url).href,
 }
 </script>
