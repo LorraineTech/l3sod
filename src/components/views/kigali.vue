@@ -21,27 +21,27 @@
         </div>
 
         <div class="overflow-hidden rounded-[2rem] border border-red-200 shadow-xl">
-          <img src="../../assets/images/kigali.jpg" alt="Kigali city" class="h-full w-full object-cover" />
+          <img :src="heroImage" alt="Kigali city" class="h-full w-full object-cover" />
         </div>
       </div>
 
       <div class="mt-12 grid gap-6 lg:grid-cols-3">
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-red-100">
-          <img src="../../assets/images/hero.png" alt="Kigali museum" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-red-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.museum" alt="Kigali museum" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-red-800">Museums & Heritage</h3>
             <p class="text-slate-600">Visit the Kigali Genocide Memorial and local galleries to understand Rwanda’s rich history.</p>
           </div>
         </article>
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-red-100">
-          <img src="../../assets/images/night.jpg" alt="Kigali nightlife" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-red-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.night" alt="Kigali nightlife" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-red-800">Nightlife & Events</h3>
             <p class="text-slate-600">Discover live music, modern bars, and evening events across the city.</p>
           </div>
         </article>
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-red-100">
-          <img src="../../assets/images/newLogo.jpg" alt="Kigali street scene" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-red-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.walks" alt="Kigali street scene" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-red-800">City Walks</h3>
             <p class="text-slate-600">Stroll safe neighborhoods, parks, and viewpoints for an authentic Kigali experience.</p>
@@ -51,3 +51,12 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const heroImage = new URL('../../assets/images/kigali.jpg', import.meta.url).href
+const cardImages = {
+  museum: new URL('../../assets/images/museum.jpg', import.meta.url).href,
+  night: new URL('../../assets/images/night.jpg', import.meta.url).href,
+  walks: new URL('../../assets/images/Gasabo.jpg', import.meta.url).href,
+}
+</script>

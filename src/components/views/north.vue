@@ -20,27 +20,27 @@
           </div>
         </div>
         <div class="overflow-hidden rounded-[2rem] border border-emerald-200 shadow-xl">
-          <img src="../../assets/images/volcanoes.jpg" alt="Northern Province" class="h-full w-full object-cover" />
+          <img :src="heroImage" alt="Northern Province" class="h-full w-full object-cover" />
         </div>
       </div>
 
       <div class="mt-12 grid gap-6 lg:grid-cols-3">
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-emerald-100">
-          <img src="../../assets/images/gorilla.jpg" alt="Gorilla trekking" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-emerald-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.gorilla" alt="Gorilla trekking" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-emerald-800">Mountain Gorillas</h3>
             <p class="text-slate-600">Join guided treks and observe gorilla families in their natural habitat.</p>
           </div>
         </article>
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-emerald-100">
-          <img src="../../assets/images/view.jpg" alt="Volcano landscape" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-emerald-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.volcano" alt="Volcano landscape" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-emerald-800">Volcano Views</h3>
             <p class="text-slate-600">Take in dramatic scenery from Rwanda’s famous mountain peaks.</p>
           </div>
         </article>
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-emerald-100">
-          <img src="../../assets/images/culture.jpg" alt="Highland village" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-emerald-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.culture" alt="Highland village" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-emerald-800">Local Villages</h3>
             <p class="text-slate-600">Explore hillside communities and learn about everyday life in the north.</p>
@@ -50,3 +50,12 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const heroImage = new URL('../../assets/images/gorilla.jpg', import.meta.url).href
+const cardImages = {
+  gorilla: new URL('../../assets/images/gorilla.jpg', import.meta.url).href,
+  volcano: new URL('../../assets/images/volcanoes.jpg', import.meta.url).href,
+  culture: new URL('../../assets/images/culture.jpg', import.meta.url).href,
+}
+</script>

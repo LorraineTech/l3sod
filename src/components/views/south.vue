@@ -20,27 +20,27 @@
           </div>
         </div>
         <div class="overflow-hidden rounded-[2rem] border border-blue-200 shadow-xl">
-          <img src="../../assets/images/city.jpg" alt="Southern Province" class="h-full w-full object-cover" />
+          <img :src="heroImage" alt="Southern Province" class="h-full w-full object-cover" />
         </div>
       </div>
 
       <div class="mt-12 grid gap-6 lg:grid-cols-3">
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-blue-100">
-          <img src="../../assets/images/yy.jpg" alt="Lake Kivu" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-blue-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.lake" alt="Lake Kivu" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-blue-800">Lake Shores</h3>
             <p class="text-slate-600">Relax by the water, enjoy boat rides, and discover lakeside communities.</p>
           </div>
         </article>
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-blue-100">
-          <img src="../../assets/images/mm.jpg" alt="Tea plantations" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-blue-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.tea" alt="Tea plantations" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-blue-800">Tea Plantations</h3>
             <p class="text-slate-600">Visit rolling tea estates and learn how some of Rwanda’s best tea is grown.</p>
           </div>
         </article>
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-blue-100">
-          <img src="../../assets/images/view.jpg" alt="Nyungwe forest" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-blue-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.forest" alt="Nyungwe forest" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-blue-800">Forest Trails</h3>
             <p class="text-slate-600">Hike rainforest paths, spot wildlife, and cross the famous canopy walk.</p>
@@ -50,3 +50,12 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const heroImage = new URL('../../assets/images/kivu.jpg', import.meta.url).href
+const cardImages = {
+  lake: new URL('../../assets/images/yy.jpg', import.meta.url).href,
+  tea: new URL('../../assets/images/mm.jpg', import.meta.url).href,
+  forest: new URL('../../assets/images/view.jpg', import.meta.url).href,
+}
+</script>

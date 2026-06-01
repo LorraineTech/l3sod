@@ -20,27 +20,27 @@
           </div>
         </div>
         <div class="overflow-hidden rounded-[2rem] border border-purple-200 shadow-xl">
-          <img src="../../assets/images/yy.jpg" alt="Western Province" class="h-full w-full object-cover" />
+          <img :src="heroImage" alt="Western Province" class="h-full w-full object-cover" />
         </div>
       </div>
 
       <div class="mt-12 grid gap-6 lg:grid-cols-3">
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-purple-100">
-          <img src="../../assets/images/view.jpg" alt="Crater lakes" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-purple-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.crater" alt="Crater lakes" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-purple-800">Crater Lakes</h3>
             <p class="text-slate-600">Visit stunning crater lakes set against lush green hills.</p>
           </div>
         </article>
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-purple-100">
-          <img src="../../assets/images/city.jpg" alt="Lakeside town" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-purple-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.town" alt="Lakeside town" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-purple-800">Lakeside Towns</h3>
             <p class="text-slate-600">Discover charming lakeside communities and relaxing waterfront activities.</p>
           </div>
         </article>
-        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-purple-100">
-          <img src="../../assets/images/newLogo.jpg" alt="Forest path" class="h-48 w-full object-cover" />
+        <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-purple-100 transition hover:-translate-y-1 hover:shadow-xl">
+          <img :src="cardImages.forest" alt="Forest path" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-purple-800">Nature Walks</h3>
             <p class="text-slate-600">Hike through quiet nature paths and enjoy the western region’s calm scenery.</p>
@@ -50,3 +50,12 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const heroImage = new URL('../../assets/images/yy.jpg', import.meta.url).href
+const cardImages = {
+  crater: new URL('../../assets/images/view.jpg', import.meta.url).href,
+  town: new URL('../../assets/images/city.jpg', import.meta.url).href,
+  forest: new URL('../../assets/images/newLogo.jpg', import.meta.url).href,
+}
+</script>
