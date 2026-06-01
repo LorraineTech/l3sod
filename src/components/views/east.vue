@@ -26,7 +26,7 @@
 
       <div class="mt-12 grid gap-6 lg:grid-cols-3">
         <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-yellow-100">
-          <img src="../../assets/images/rw.jpg" alt="Akagera" class="h-48 w-full object-cover" />
+          <img src="../../assets/images/real.jpg" alt="Akagera" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-yellow-800">Akagera Park</h3>
             <p class="text-slate-600">Enjoy wildlife viewing, boat rides, and scenic drives through open plains.</p>
