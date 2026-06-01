@@ -48,7 +48,7 @@
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden shadow-lg bg-white">
-          <img src="../../assets/images/view.jpg" alt="Eastern Province landscape" class="h-64 w-full object-cover" />
+          <img src="../../assets/images/pk.jpg" alt="Eastern Province landscape" class="h-64 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2 text-yellow-800">Eastern Province</h3>
             <p class="text-slate-600 mb-4">Akagera safari parks, savanna scenes, and birding adventures await here.</p>
