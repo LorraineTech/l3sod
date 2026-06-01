@@ -56,6 +56,6 @@ const heroImage = new URL('../../assets/images/kivu.jpg', import.meta.url).href
 const cardImages = {
   lake: new URL('../../assets/images/yy.jpg', import.meta.url).href,
   tea: new URL('../../assets/images/mm.jpg', import.meta.url).href,
-  forest: new URL('../../assets/images/view.jpg', import.meta.url).href,
+  forest: new URL('../../assets/images/gorilla.jpg', import.meta.url).href,
 }
 </script>

@@ -15,7 +15,7 @@
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm bg-slate-50">
-          <img src="../../assets/images/view.jpg" alt="Rwanda nature view" class="h-64 w-full object-cover" />
+          <img src="../../assets/images/stade.jpg" alt="Rwanda nature view" class="h-64 w-full object-cover" />
           <div class="p-6">
             <h2 class="text-2xl font-semibold mb-3">Wildlife Safari</h2>
             <p class="text-slate-600 mb-4">Experience Akagera and Nyungwe through amazing wildlife and nature footage.</p>
@@ -23,7 +23,7 @@
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden border border-slate-200 shadow-sm bg-slate-50">
-          <img src="../../assets/images/rw.jpg" alt="Rwanda cultural tour" class="h-64 w-full object-cover" />
+          <img src="../../assets/images/yy.jpg" alt="Rwanda cultural tour" class="h-64 w-full object-cover" />
           <div class="p-6">
             <h2 class="text-2xl font-semibold mb-3">Cultural Journeys</h2>
             <p class="text-slate-600 mb-4">Cultural stories from markets, local performances, and historic sites.</p>

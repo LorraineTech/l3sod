@@ -55,7 +55,7 @@
 <script setup>
 const heroImage = new URL('../../assets/images/kigali.jpg', import.meta.url).href
 const cardImages = {
-  museum: new URL('../../assets/images/museum.jpg', import.meta.url).href,
+  museum: new URL('../../assets/images/mm.jpg', import.meta.url).href,
   night: new URL('../../assets/images/night.jpg', import.meta.url).href,
   walks: new URL('../../assets/images/Gasabo.jpg', import.meta.url).href,
 }

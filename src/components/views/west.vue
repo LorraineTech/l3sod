@@ -54,8 +54,8 @@
 <script setup>
 const heroImage = new URL('../../assets/images/yy.jpg', import.meta.url).href
 const cardImages = {
-  crater: new URL('../../assets/images/view.jpg', import.meta.url).href,
-  town: new URL('../../assets/images/city.jpg', import.meta.url).href,
-  forest: new URL('../../assets/images/newLogo.jpg', import.meta.url).href,
+  crater: new URL('../../assets/images/volcanoes.jpg', import.meta.url).href,
+  town: new URL('../../assets/images/huye.jpg', import.meta.url).href,
+  forest: new URL('../../assets/images/zebra.jpg', import.meta.url).href,
 }
 </script>

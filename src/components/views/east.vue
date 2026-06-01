@@ -33,7 +33,7 @@
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden bg-white shadow-lg border border-yellow-100">
-          <img src="../../assets/images/view.jpg" alt="Savanna landscape" class="h-48 w-full object-cover" />
+          <img src="../../assets/images/cows.jpg" alt="Savanna landscape" class="h-48 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-3 text-yellow-800">Savanna Views</h3>
             <p class="text-slate-600">Capture expansive landscapes with easy access from Kigali.</p>

@@ -32,7 +32,7 @@
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden shadow-lg bg-white">
-          <img src="../../assets/images/mount.jpg" alt="Northern Province view" class="h-64 w-full object-cover" />
+          <img src="../../assets/images/gorilla.jpg" alt="Northern Province view" class="h-64 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2 text-green-800">Northern Province</h3>
             <p class="text-slate-600 mb-4">Visit gorilla trekking, volcanoes, and highland villages surrounded by misty peaks.</p>
@@ -40,7 +40,7 @@
           </div>
         </article>
         <article class="rounded-[2rem] overflow-hidden shadow-lg bg-white">
-          <img src="../../assets/images/city.jpg" alt="Southern Province landscape" class="h-64 w-full object-cover" />
+          <img src="../../assets/images/kgl.jpg" alt="Southern Province landscape" class="h-64 w-full object-cover" />
           <div class="p-6">
             <h3 class="text-2xl font-semibold mb-2 text-blue-800">Southern Province</h3>
             <p class="text-slate-600 mb-4">Lake Kivu, tea estates, and forest hikes make the south ideal for nature lovers.</p>
