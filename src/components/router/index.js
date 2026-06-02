@@ -11,7 +11,8 @@ import NorthView from '../views/north.vue'
 import SouthView from '../views/south.vue'
 import WestView from '../views/west.vue'
 import KigaliView from '../views/kigali.vue'
-
+import Login from '../views/Login.vue'
+import register from '../views/register.vue'
 
 const routes = [
     {
@@ -75,6 +76,16 @@ const routes = [
         name:"kigali", 
         component: KigaliView,
     },
+    {
+        path:"/login",
+        name:"login",
+        component: Login,
+    },
+    {
+        path:"/register",
+        name:"register",
+        component: register,
+    }
 ];
  const router = createRouter({
     history: createWebHistory(),

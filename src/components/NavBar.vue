@@ -30,6 +30,12 @@ const { t } = useTranslation()
    </li>
 
    <li><router-link to="/contact" class="hover:text-yellow-300">{{ t('navContact') }}</router-link></li>
+   
+   <li>
+     <router-link to="/login" class="bg-yellow-400 text-green-900 font-semibold px-3 py-2 rounded-md hover:bg-yellow-400 hover:text-green-950">
+       Login
+     </router-link>
+   </li>
 </ul>
  </nav>
 </template>
