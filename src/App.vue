@@ -1,16 +1,7 @@
 <script setup>
-//port HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue';
 import Footer from './components/views/Footer.vue';
 import Translator from './components/Translator.vue';
-import Home from './components/views/Home.vue';
-import Kigali from './components/views/kigali.vue';
-import North from './components/views/north.vue';
-import West from './components/views/west.vue';
-import South from './components/views/south.vue';
-import East from './components/views/east.vue';
-
-
 </script>
 
 <template>
@@ -25,6 +16,5 @@ import East from './components/views/east.vue';
       <router-view />
     </main>
     <Footer/>
-    
   </div>
 </template>

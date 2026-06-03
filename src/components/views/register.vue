@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
 
 const fullName = ref('')
 const email = ref('')
@@ -16,8 +19,19 @@ const handleRegister = (event) => {
     return
   }
 
-  // Add actual registration logic here
-  alert('Registration submitted successfully!')
+  const user = {
+    name: fullName.value,
+    email: email.value,
+    phone: phone.value,
+    gender: gender.value,
+    age: age.value,
+  }
+
+  const storedUsers = JSON.parse(localStorage.getItem('users') || '[]')
+  storedUsers.push(user)
+  localStorage.setItem('users', JSON.stringify(storedUsers))
+  localStorage.setItem('user', JSON.stringify(user))
+  router.push('/dashboard')
 }
 </script>
 
@@ -66,7 +80,14 @@ const handleRegister = (event) => {
           class="border border-gray-300 rounded px-4 py-2 focus:outline-one focus:border-green-700"
         />
         <input
-          v-model="Age"
+          v-model="confirmPassword"
+          type="password"
+          placeholder="Confirm your password"
+          required
+          class="border border-gray-300 rounded px-4 py-2 focus:outline-one focus:border-green-700"
+        />
+        <input
+          v-model="age"
           type="number"
           placeholder="Enter your age"
           required

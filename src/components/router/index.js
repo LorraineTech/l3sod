@@ -13,6 +13,7 @@ import WestView from '../views/west.vue'
 import KigaliView from '../views/kigali.vue'
 import Login from '../views/Login.vue'
 import register from '../views/register.vue'
+import Dashboard from '../views/dashboard/dashboard.vue'
 
 const routes = [
     {
@@ -85,6 +86,11 @@ const routes = [
         path:"/register",
         name:"register",
         component: register,
+    },
+    {
+        path: "/dashboard",
+        name: "dashboard",
+        component: Dashboard,
     }
 ];
  const router = createRouter({
